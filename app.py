@@ -5,7 +5,7 @@ pd.set_option('display.max_rows',None)
 pd.set_option('display.max_columns',None)
 pd.set_option('display.max_colwidth',None)
 
-df = pd.read_csv('startup_funding.csv1')
+df = pd.read_csv('startup_funding(1).csv1')
 df['date']= pd.to_datetime(df['date'],errors= 'coerce')
 df['year'] = df['date'].dt.year
 df['month'] = df['date'].dt.month
